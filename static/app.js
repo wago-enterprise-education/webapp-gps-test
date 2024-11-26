@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(showPosition, showError, { timeout: 1000 });
+        navigator.geolocation.watchPosition(showPosition, showError, { timeout: 100 });
     } else {
         document.getElementById('location').innerText = "Geolocation is not supported by this browser.";
     }
